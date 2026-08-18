@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Samuel Vijay — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="grid-bg" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <span class="brand">~/portfolio</span>
+    <nav class="nav">
+      <a href="#about">about</a>
+      <a href="#projects">projects</a>
+      <a href="#skills">skills</a>
+      <a href="#contact">contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero wrap">
+    <div class="corner corner-tl" aria-hidden="true"></div>
+    <div class="corner corner-tr" aria-hidden="true"></div>
+    <div class="corner corner-bl" aria-hidden="true"></div>
+    <div class="corner corner-br" aria-hidden="true"></div>
+
+    <p class="prompt-line"><span class="prompt-symbol">$</span> whoami</p>
+    <h1 class="hero-title">P Samuel Vijay</h1>
+    <p class="hero-role">B.E. Computer Science &amp; Engineering — Cloud &amp; Distributed Systems</p>
+    <p class="hero-desc">
+      I build and deploy systems across cloud infrastructure and blockchain networks —
+      from provisioning AWS environments to designing decentralized applications.
+      This site itself runs on Amazon S3, CloudFront, and Route&nbsp;53.
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#projects">view projects</a>
+      <a class="btn btn-ghost" href="#contact">get in touch</a>
+    </div>
+  </section>
+
+  <section id="about" class="section wrap">
+    <p class="section-label">01 — about</p>
+    <div class="about-grid">
+      <p class="about-text">
+        I'm a computer science student focused on the infrastructure layer of modern
+        software — how applications get built, packaged, deployed, and kept running
+        reliably at scale. I'm particularly interested in cloud-native architecture
+        and blockchain-based systems, including permissioned networks like
+        Hyperledger Fabric.
+      </p>
+      <div class="status-card">
+        <div class="status-row"><span class="dot dot-live"></span> Status <span class="status-val">Available for opportunities</span></div>
+        <div class="status-row"><span class="dot dot-idle"></span> Focus <span class="status-val">Cloud infra &amp; blockchain</span></div>
+        <div class="status-row"><span class="dot dot-idle"></span> Region <span class="status-val">ap-south-1</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section wrap">
+    <p class="section-label">02 — projects</p>
+    <div class="project-grid">
+
+      <article class="project-card">
+        <div class="project-head">
+          <span class="dot dot-live"></span>
+          <h3>Kubernetes Cluster on EKS</h3>
+        </div>
+        <p>Production-style Kubernetes deployment on Amazon EKS with Terraform-managed
+        infrastructure, IAM-mapped RBAC, ECR image delivery, and autoscaling across
+        multiple availability zones.</p>
+        <div class="tag-row">
+          <span class="tag">EKS</span><span class="tag">Terraform</span><span class="tag">IAM</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-head">
+          <span class="dot dot-live"></span>
+          <h3>Static Site on S3 + CloudFront</h3>
+        </div>
+        <p>This portfolio: a static site hosted on S3, distributed globally through
+        CloudFront, served over HTTPS via ACM, and resolved through a custom domain
+        on Route 53.</p>
+        <div class="tag-row">
+          <span class="tag">S3</span><span class="tag">CloudFront</span><span class="tag">Route 53</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-head">
+          <span class="dot dot-idle"></span>
+          <h3>Project Name Here</h3>
+        </div>
+        <p>Short description of another project — what it does, what problem it solves,
+        and the core technology behind it.</p>
+        <div class="tag-row">
+          <span class="tag">Tag</span><span class="tag">Tag</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="skills" class="section wrap">
+    <p class="section-label">03 — skills</p>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h4>Cloud &amp; Infra</h4>
+        <ul><li>AWS (S3, EC2, EKS, IAM)</li><li>Terraform</li><li>Docker &amp; Kubernetes</li></ul>
+      </div>
+      <div class="skill-group">
+        <h4>Blockchain</h4>
+        <ul><li>Hyperledger Fabric</li><li>Smart contracts</li><li>Distributed ledgers</li></ul>
+      </div>
+      <div class="skill-group">
+        <h4>Development</h4>
+        <ul><li>Python</li><li>JavaScript</li><li>REST APIs</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section wrap contact-section">
+    <p class="section-label">04 — contact</p>
+    <h2 class="contact-title">Let's build something.</h2>
+    <p class="contact-desc">Open to internships, collaborations, and interesting infrastructure problems.</p>
+    <a class="btn btn-primary" href="mailto:samuelvijay2004@gmail.com">samuelvijay2004@gmail.com</a>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span>© 2026 P Samuel Vijay</span>
+    <span class="footer-meta">deployed via S3 · CloudFront · Route 53</span>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
