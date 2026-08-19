@@ -1,2 +1,20 @@
+# Terraform
+terraform/.terraform/
+terraform/.terraform.lock.hcl
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+terraform/*.tfplan
+
+# Local config files
 cf-config.json
+check_freetier.py
+
+# Kiro local settings
 .kiro/
+
+# Root-level loose files (moved to terraform/)
+ecr.tf
+outputs.tf
+deployment.yaml
+service.yaml
+Dockerfile

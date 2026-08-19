@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EKS Demo App</title>
+  <style>
+    body {
+      background: #0b1d3a;
+      color: #f5f7fa;
+      font-family: 'Courier New', monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+    h1 { color: #ffb000; }
+    p  { color: #93a8c9; }
+    .tag {
+      display: inline-block;
+      border: 1px solid #cf9000;
+      color: #ffb000;
+      font-size: 0.75rem;
+      padding: 3px 10px;
+      border-radius: 3px;
+      margin: 4px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hello from Amazon EKS</h1>
+  <p>
+    This container image was built locally, pushed to Amazon ECR,<br>
+    and deployed onto a Kubernetes cluster running on EKS.
+  </p>
+  <div>
+    <span class="tag">EKS</span>
+    <span class="tag">ECR</span>
+    <span class="tag">Terraform</span>
+    <span class="tag">Kubernetes</span>
+  </div>
+</body>
+</html>
