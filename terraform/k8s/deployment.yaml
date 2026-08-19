@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: demo-app
-          image: <ECR_REPOSITORY_URL>:latest   # replace with: terraform output -raw ecr_repository_url
+          image: 837206353876.dkr.ecr.ap-south-1.amazonaws.com/demo-eks-cluster-demo-app:latest
           ports:
             - containerPort: 80
           resources:
